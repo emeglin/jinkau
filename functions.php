@@ -35,9 +35,14 @@ setlocale( LC_ALL, 'fr', 'fr_FR', 'fr_FR.utf8', 'fr_FR.ISO_8859-1' );
 // cette fonction se charge d'intégrer les feuilles de style du thème
 function my_theme_enqueue_styles() {
     // chargement de la feuille de style de Bootstrap
-    wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css' );
+    wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.css' );
     // chargement de la feuille de style du thème
-    wp_enqueue_style( 'my-theme-main', get_stylesheet_directory_uri().'/css/main.css', ['bootstrap'] );
+    wp_enqueue_style( 'my-theme-main', get_stylesheet_directory_uri().'/css/style.css', ['bootstrap'] );
+    // chargement carousel
+    wp_enqueue_style( 'carousel', get_stylesheet_directory_uri().'/css/owl.carousel.min.css');
+    wp_enqueue_style( 'animate', get_stylesheet_directory_uri().'/css/animate.css');
+    wp_enqueue_style( 'bootstrap map', get_stylesheet_directory_uri().'/css/bootstrap.css.map');
+    
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
@@ -53,6 +58,10 @@ function my_theme_enqueue_script() {
     wp_enqueue_script( 'bootstrap', get_stylesheet_directory_uri().'/js/bootstrap.min.js', ['popper'] );
     // chargement du script JS du thème
     wp_enqueue_script( 'my-theme-main', get_stylesheet_directory_uri().'/js/main.js', ['bootstrap'] );
+    wp_enqueue_script( 'jquery', get_stylesheet_directory_uri().'/js/jquery-3.2.1.min.js', ['jquery'] );
+    wp_enqueue_script( 'jquery', get_stylesheet_directory_uri().'/js/jquery.waypoints.min.js', ['jquery'] );
+    wp_enqueue_script( 'carousel', get_stylesheet_directory_uri().'/js/owl.carousel.min.js', ['bootstrap'] );
+    
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_script' );
 
