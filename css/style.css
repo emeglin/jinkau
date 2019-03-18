@@ -1003,3 +1003,13 @@ icon-book {
 .footertext-color {
   color: white !important;
 }
+
+
+.bg-1 {
+  background-image: url('../img/Capture\ JINKAU_01.PNG');
+}
+
+.bg-2 {
+  background-image: url('../img/Capture\ JINKAU_02.PNG');
+
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'aleoregular';
+    src: url('Aleo-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleobold';
+    src: url('Aleo-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

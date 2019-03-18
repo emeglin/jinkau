@@ -37,12 +37,17 @@ function my_theme_enqueue_styles() {
     // chargement de la feuille de style de Bootstrap
     wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.css' );
     // chargement de la feuille de style du thème
-    wp_enqueue_style( 'my-theme-main', get_stylesheet_directory_uri().'/css/style.css', ['bootstrap'] );
-    // chargement carousel
-    wp_enqueue_style( 'carousel', get_stylesheet_directory_uri().'/css/owl.carousel.min.css');
-    wp_enqueue_style( 'animate', get_stylesheet_directory_uri().'/css/animate.css');
-    wp_enqueue_style( 'bootstrap map', get_stylesheet_directory_uri().'/css/bootstrap.css.map');
+    wp_enqueue_style( 'my-theme-main', get_stylesheet_directory_uri().'/css/style.css', ['bootstrap'],['carousel']);
+    // chargement de la feuille de style pour font
+    wp_enqueue_style( 'fonts', get_stylesheet_directory_uri().'/img/fonts/Aleo/fonts.css', ['bootstrap']);
     
+    wp_enqueue_style('font-awsome', get_stylesheet_directory_uri() . '/css/all.css');
+
+    wp_enqueue_style('carousel', get_stylesheet_directory_uri() . '/css/owl.carousel.min');
+
+    wp_enqueue_style('animate-css-style', get_stylesheet_directory_uri() . '/css/animate.css');
+
+    wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/boostrap.css.map', ['bootstrap']);
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
@@ -57,13 +62,16 @@ function my_theme_enqueue_script() {
     // chargement du script JS de Bootstrap
     wp_enqueue_script( 'bootstrap', get_stylesheet_directory_uri().'/js/bootstrap.min.js', ['popper'] );
     // chargement du script JS du thème
-    wp_enqueue_script( 'my-theme-main', get_stylesheet_directory_uri().'/js/main.js', ['bootstrap'] );
+    wp_enqueue_script( 'my-theme-main', get_stylesheet_directory_uri().'/js/main.js', ['carousel-js'],['jquery'] );
+
     wp_enqueue_script( 'jquery', get_stylesheet_directory_uri().'/js/jquery-3.2.1.min.js', ['jquery'] );
-    wp_enqueue_script( 'jquery', get_stylesheet_directory_uri().'/js/jquery.waypoints.min.js', ['jquery'] );
-    wp_enqueue_script( 'carousel', get_stylesheet_directory_uri().'/js/owl.carousel.min.js', ['bootstrap'] );
-    
+
+    wp_enqueue_script( 'jquery-waypoint', get_stylesheet_directory_uri().'/js/jquery.waypoints.min.js', ['jquery'] );
+
+    wp_enqueue_script( 'carousel-js', get_stylesheet_directory_uri().'/js/owl.carousel.min.js', ['jquery'] );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_script' );
+
 
 /**
  * menu 
@@ -74,6 +82,13 @@ register_nav_menus([
     // si vous changez le nom du menu, changez-le aussi dans la configuration du menu WP_Bootstrap_Navwalker dans le fichier `header.php`
     'main-menu' => 'Main menu',
 ]);
+
+/* Theme setup */
+add_action( 'after_setup_theme', 'wpt_setup' );
+    if ( ! function_exists( 'wpt_setup' ) ):
+        function wpt_setup() {  
+            register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
+    } endif;
 
 /**
  * fonctionnalités du thème
