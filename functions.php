@@ -48,6 +48,12 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style('animate-css-style', get_stylesheet_directory_uri() . '/css/animate.css');
 
     wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/boostrap.css.map', ['bootstrap']);
+
+    wp_enqueue_style('flaticon', get_stylesheet_directory_uri() . '/fonts/flaticon/font/flaticon.css' , ['bootstrap']);
+
+    wp_enqueue_style('fontawesome', get_stylesheet_directory_uri() . '/fonts/fontawesome/css/font-awesome.min.css' , ['bootstrap']);
+
+    wp_enqueue_style('ionicons', get_stylesheet_directory_uri() . '/fonts/ionicons/css/ionicons.css' , ['bootstrap']);
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
@@ -131,3 +137,5 @@ function my_theme_image_size_names_choose($sizes) {
 }
 add_filter( 'image_size_names_choose', 'my_theme_image_size_names_choose' );
 
+// ajout des widget
+add_filter('widget_text','do_shortcode');
