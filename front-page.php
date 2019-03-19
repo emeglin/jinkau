@@ -18,7 +18,7 @@ get_header();
         <div class="row justify-content-center mb-5">
           <div class="col-md-8 text-center">
             <h2 class="text-uppercase heading border-bottom mb-4">Projets récent</h2>
-            <p><a href="projets.html" class="btn btn-primary">Voir tout les projets</a></p>
+            <p><a href="http://localhost/jinkau/projet/" class="btn btn-primary">Voir tout les projets</a></p>
           </div>
         </div>
 

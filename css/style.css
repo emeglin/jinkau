@@ -1004,12 +1004,6 @@ icon-book {
   color: white !important;
 }
 
-
-.bg-1 {
-  background-image: url('../img/Capture\ JINKAU_01.PNG');
-}
-
-.bg-2 {
-  background-image: url('../img/Capture\ JINKAU_02.PNG');
-
+.background-contact {
+  background-image: url('http://handyfinance.com.fj/wp-content/uploads/2014/08/contact_banner.png');
 }

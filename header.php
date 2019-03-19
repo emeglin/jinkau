@@ -12,6 +12,7 @@
     <body <?php body_class(); ?>>
     <header role="banner">
       <nav class="nav navbar navbar-expand-lg navbar-light bg-light">
+
         <div class="container">
           
           <a href="index.html"><img src="<?= get_stylesheet_directory_uri(); ?>/img/logo.jpg" alt="logo"/></a>
@@ -22,33 +23,33 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav mr-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Accueil</a>
+                <a class="nav-link active" href="http://localhost/jinkau/accueil">Accueil</a>
               </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projets</a>
+              <a class="nav-link" href="http://localhost/jinkau/projet/">Projets</a>
             </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collectif</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="#">Qui sommes nous ?</a>
-                  <a class="dropdown-item" href="#">Organigramme</a>
-                  <a class="dropdown-item" href="#">Nos spécialités</a>
+                  <a class="dropdown-item" href="http://localhost/jinkau/qui-sommes-nous/">Qui sommes nous ?</a>
+                  <a class="dropdown-item" href="http://localhost/jinkau/organigramme/">Organigramme</a>
+                  <a class="dropdown-item" href="http://localhost/jinkau/nos-specialites/">Nos spécialités</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Atelier collaboratif</a>
+                <a class="nav-link" href="http://localhost/jinkau/atelier-collaboratif/">Atelier collaboratif</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Médias</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="#">Vidéos</a>
-                  <a class="dropdown-item" href="#">Conférences</a>
-                  <a class="dropdown-item" href="#">Newsletter</a>
+                  <a class="dropdown-item" href="http://localhost/jinkau/videos/">Vidéos</a>
+                  <a class="dropdown-item" href="http://localhost/jinkau/conferences/">Conférences</a>
+                  <a class="dropdown-item" href="http://localhost/jinkau/newsletter/">Newsletter</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact &amp; Liens</a>
+                <a class="nav-link" href="http://localhost/jinkau/contact/">Contact &amp; Liens</a>
               </li>
             </ul>
             <ul class="navbar-nav ml-auto ">
