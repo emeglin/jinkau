@@ -9,9 +9,9 @@
                 </div>
             <div class="col-md-3">
               <ul class="list-unstyled footer-link">
-                <li class="d-flex"><span class="mr-3">A:</span><span class="text-black">Lille 59000...</span></li>
+                <li class="d-flex"><span class="mr-3">A:</span><span class="text-black">71 rue Pasteur, 59110 La Madeleine</span></li>
                 <li class="d-flex"><span class="mr-3">T:</span><span class="text-black">+33 07 60 ....</span></li>
-                <li class="d-flex"><span class="mr-3">E:</span><span class="text-black">jinkau@contact.com</span></li>
+                <li class="d-flex"><span class="mr-3">E:</span><span class="text-black"><a href='mailto:contact@jinkau.com'>contact@jinkau.com</a></span></li>
               </ul>
             </div>
             <div class="col-md-3">

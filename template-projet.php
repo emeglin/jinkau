@@ -10,14 +10,14 @@ get_header();
 
 <section class="home-slider  inner-page">
     <?php echo do_shortcode('[metaslider id="64"]'); ?>
-          <div class="row slider-text align-items-center justify-content-center text-center">
-            <div class="col-md-7 col-sm-12 ">
-              <h1 class="color-projet">Nos projets</h1>
-            </div>
-          </div>
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 text-center">
+          <h1 class="color-projet">Nos projets</h1>
         </div>
-
       </div>
+    </div>
+
 
 
     </section>

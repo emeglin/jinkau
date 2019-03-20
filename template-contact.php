@@ -12,7 +12,7 @@ get_header();
         
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
-            <div class="col-md-7 col-sm-12 element-animate">
+            <div class="col-md-7 col-sm-12">
               <h1 class="color-contact">Contactez nous</h1>
             </div>
           </div>
@@ -38,7 +38,7 @@ get_header();
             <p class="mb-5">71 Rue Pasteur, <br> 59000 <br> LILLE</p>
             
             <h5 class="text-uppercase mb-3">Email</h5>
-            <p class="mb-5"><a href="mailto:jinkau@outlook.com">jinkau@outlook.com</a> </p>
+            <p class="mb-5"><a href="mailto:contact@jinkau.com">contact@jinkau.com</a> </p>
             
             <h5 class="text-uppercase mb-3">Téléphone</h5>
             <p class="mb-5">Fixe: 03 03 03 03 03 <br> Mobile: 06 06 06 06 06</p>

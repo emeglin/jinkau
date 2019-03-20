@@ -9,7 +9,9 @@ get_header();
 }
 ?>
     <section>
-      <?php echo do_shortcode('[metaslider id="18"]'); ?>
+    <?php 
+      echo do_shortcode('[metaslider id="18"]'); 
+    ?>
 
     </section>
     
