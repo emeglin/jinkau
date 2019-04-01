@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title><?php wp_title(); ?>Jinkau</title>
-        <link rel="shortcut icon" type="image/png" href="<?= get_stylesheet_directory_uri(); ?>/img/icons8-bulle.svg" />
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <?php wp_head(); ?>
     </head>
@@ -15,7 +14,7 @@
 
         <div class="container">
           
-          <a href="index.html"><img src="<?= get_stylesheet_directory_uri(); ?>/img/logo.jpg" alt="logo"/></a>
+          <a href="http://localhost/jinkau/image-fun/"><img src="<?= get_stylesheet_directory_uri(); ?>/img/logo.jpg" alt="logo"/></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,7 +37,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="http://localhost/jinkau/atelier-collaboratif/">Atelier collaboratif</a>
+                <a class="nav-link" href="http://localhost/jinkau/atelier-collaboratif/">Ateliers collaboratifs</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Médias</a>
@@ -46,6 +45,7 @@
                   <a class="dropdown-item" href="http://localhost/jinkau/videos/">Vidéos</a>
                   <a class="dropdown-item" href="http://localhost/jinkau/conferences/">Conférences</a>
                   <a class="dropdown-item" href="http://localhost/jinkau/newsletter/">Newsletter</a>
+                  <a class="dropdown-item" href="http://localhost/jinkau/revuepresse/">Revue de Presse</a>
                 </div>
               </li>
               <li class="nav-item">

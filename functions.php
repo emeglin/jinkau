@@ -33,7 +33,7 @@ setlocale( LC_ALL, 'fr', 'fr_FR', 'fr_FR.utf8', 'fr_FR.ISO_8859-1' );
  */
 
 // cette fonction se charge d'intégrer les feuilles de style du thème
-function jincau_enqueue_styles() {
+function jinkau_enqueue_styles() {
     // chargement de la feuille de style de Bootstrap
     wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.css' );
     // chargement de la feuille de style du thème

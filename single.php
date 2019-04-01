@@ -10,18 +10,11 @@ if ( have_posts() ):
 ?>
     <article>
         <div class="row">
-            <div class="col-sm">
-                <h1><?php the_title(); ?></h1>
-                <div><em><?php the_time( get_option( 'date_format' ) ); ?></em></div>
-            </div>
+                
         </div>
         <div class="row">
             <div class="col-sm article-illustration">
-<?php
-        if ( has_post_thumbnail() ):
-            the_post_thumbnail( 'full' );
-        endif;
-?>
+
             </div>
         </div>
         <div class="row">

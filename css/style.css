@@ -1004,6 +1004,33 @@ icon-book {
   color: white !important;
 }
 
-.background-contact {
-  background-image: url('http://handyfinance.com.fj/wp-content/uploads/2014/08/contact_banner.png');
+@font-face {
+  font-family: ‘tfforever-regular‘;
+  src: url(‘tfforever-regular-webfont.eot’);
+  src: url(‘tfforever-regular-webfont.eot?#iefix’) format(’embedded-opentype’),
+  url(‘tfforever-regular-webfont.woff2′) format(‘woff2’),
+  url(‘tfforever-regular-webfont.woff’) format(‘woff’),
+  url(‘tfforever-regular-webfont.ttf’) format(‘truetype’),
+  url(‘tfforever-regular-webfont.svg#svgwpf‘) format(‘svg’);
+  }
+@font-face {
+  font-family: ‘tfforever-bold‘;
+  src: url(‘tfforever-bold-webfont.eot’);
+  src: url(‘tfforever-bold-webfont.eot?#iefix’) format(’embedded-opentype’),
+  url(‘tfforever-bold-webfont.woff2′) format(‘woff2’),
+  url(‘tfforever-bold-webfont.woff’) format(‘woff’),
+  url(‘tfforever-bold-webfont.ttf’) format(‘truetype’),
+  url(‘tfforever-bold-webfont.svg#svgwpf‘) format(‘svg’);
+  }
+
+  body, div {
+    font-family: 'tfforever-regular',arial,sans-serif !important;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'tfforever-bold',arial,sans-serif !important;
+  }
+
+.lien {
+  text-decoration: none;
+  color: black !important;
 }

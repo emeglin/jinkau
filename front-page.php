@@ -9,9 +9,11 @@ get_header();
 }
 ?>
     <section>
+
     <?php 
       echo do_shortcode('[metaslider id="18"]'); 
     ?>
+    
 
     </section>
     
@@ -19,68 +21,11 @@ get_header();
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-8 text-center">
-            <h2 class="text-uppercase heading border-bottom mb-4">Projets récent</h2>
-            <p><a href="http://localhost/jinkau/projet/" class="btn btn-primary">Voir tout les projets</a></p>
+            <h2 class="text-uppercase heading border-bottom mb-4">Nos projets</h2>
+            <p><a href="http://glinkowski-emeric.fr/jinkau/projet/" class="btn btn-primary">Voir tout les projets</a></p>
           </div>
         </div>
-
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <a href=" " class="link-thumbnail">
-              <h3>Projet 1</h3>
-              <img src="<?= get_stylesheet_directory_uri(); ?>/img/Capture JINKAU_02.PNG" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href=" " class="link-thumbnail">
-              <h3>Projet 2</h3>
-              <img src="<?= get_stylesheet_directory_uri(); ?>/img/Capture JINKAU_03.PNG" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href=" " class="link-thumbnail">
-              <h3>Projet 3</h3>
-              <img src="<?= get_stylesheet_directory_uri(); ?>/img/Capture JINKAU_04.PNG" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href=" " class="link-thumbnail">
-              <h3>Projet 1</h3>
-              <img src="<?= get_stylesheet_directory_uri(); ?>/img/Capture JINKAU_02.PNG" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href=" " class="link-thumbnail">
-              <h3>Projet 2</h3>
-              <img src="<?= get_stylesheet_directory_uri(); ?>/img/Capture JINKAU_03.PNG" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href=" " class="link-thumbnail">
-              <h3>Projet 3</h3>
-              <img src="<?= get_stylesheet_directory_uri(); ?>/img/Capture JINKAU_04.PNG" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href=" " class="link-thumbnail">
-              <h3>Projet 1</h3>
-              <img src="<?= get_stylesheet_directory_uri(); ?>/img/Capture JINKAU_02.PNG" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href=" " class="link-thumbnail">
-              <h3>Projet 2</h3>
-              <img src="<?= get_stylesheet_directory_uri(); ?>/img/Capture JINKAU_03.PNG" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href=" " class="link-thumbnail">
-              <h3>Projet 3</h3>
-              <img src="<?= get_stylesheet_directory_uri(); ?>/img/Capture JINKAU_04.PNG" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          
-        </div>
+        <?php the_content(); ?>
       </div>
     </section>
 
